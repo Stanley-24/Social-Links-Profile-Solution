@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Stanley-24/Social-Links-Profile-Solution.git)
-- Live Site URL: [https://social-links-profile-solution-ochre.vercel.app/)
+- Solution URL: [View Here](https://github.com/Stanley-24/Social-Links-Profile-Solution.git)
+- Live Site URL: [View Here](https://social-links-profile-solution-ochre.vercel.app/)
 
 ## My process
 
