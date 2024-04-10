@@ -1,90 +1,110 @@
-*{
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+:root {
+    /* primary */
+    --Green:hls(75, 94%, 57%);
+    /* Neutral */
+    --white: h
+}
+:root {
+    /* Primary */
+    --Green: hsl(75, 94%, 57%);
+  
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+  }
+  * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-
-}
-body{
-    background: #141414;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: Inter, Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: white;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #1f1f1f;
-    padding: 30px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-}
-& img{
-    margin-bottom: 30px;
+  }
+  img {
+    display: block;
     max-width: 100%;
-    border-radius: 70%;
-    -webkit-border-radius: 70%;
-        -moz-border-radius: 70%;
-        -ms-border-radius: 70%;
-        -o-border-radius: 70%;
-}
-& h1{
-    margin: 5px 0;
-}
-& p.location{
-    color: #d8fd3e;
-    margin-bottom: 30px;
-}
-& p.work{
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-weight: 450;
-    font-style: italic;
-   
-}
-& .links{
+    border-radius: 50%;
+    width: 70px;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--Off-Black);
+  }
+  .card {
+    width: 95vw;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Dark-Grey);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .card-content h1 {
+    margin-top: 1rem;
+    color: var(--White);
+  }
+  .card-content p:first-of-type {
+    color: var(--Green);
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+  
+  .card-content p:nth-of-type(2) {
+    color: var(--White);
+    margin: 1.2rem 0 1rem 0;
+    opacity: 0.7;
+  }  
+  .card-links {
     width: 100%;
-}
-& .links .link{
-    cursor: pointer;
-        transition: 0.3s;
-        text-align: center;
-        width: 100%;
-        background: #333333;
-        padding: 10px 0;
-        border-radius: 6px;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        -ms-border-radius: 6px;
-        -o-border-radius: 6px;
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-}
-& .links .link:not(:last-child){
-    margin-bottom: 10px;
-}
-.links .link:hover{
-    background: #d8fd3e;
-    color: black;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-@media (min-width: 1200px) {
-    .container{
-        width: 35%;
-    }
-}
+  }
+  .card a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color: var(--Grey);
+    font-weight: 600;
+    color: var(--White);
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card a:hover,
+  .card a:focus,
+  .card a:active {
+    background-color: var(--Green);
+    color: var(--Off-Black);
+  }
+
+  footer {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  
+  .attribution {
+    color: var(--White);
+    opacity: 0.7;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .attribution a {
+    text-decoration: none;
+    color: var(--White);
+    font-style: oblique;
+    border-radius: 20px;
+    border-bottom: 1px solid var(--White);
+  }
+  
+  .attribution a:hover{
+      color: var(--Green);
+      border-bottom: 1px solid var(--Green);
+  }
